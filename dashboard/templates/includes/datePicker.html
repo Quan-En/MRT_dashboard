@@ -1,0 +1,16 @@
+<div class="container mt-4 col-3 d-flex" style="margin-top:20px; margin-left:20px">
+    {% include 'includes/items_modals.html' %}
+    <div class="input-group date" id="datepicker">
+        <input type="text" id="selectd-date" class="form-control" placeholder="Date">
+        <div class="input-group-addon">
+            <span class="input-group-text bg-white d-block">
+                <i class="fa fa-calendar"></i>
+            </span>
+        </div>
+    </div>
+    <div>
+        <button id="singe-date-btn" class="btn btn-outline btn-success" data-bs-toggle="modal" data-bs-target="#Modal-MoreInfo" onclick="getValueFromDate()">Query</button>
+    </div>
+
+    
+</div>

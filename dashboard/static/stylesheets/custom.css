@@ -1,0 +1,63 @@
+/* Custom styles for the datepicker */
+#datepicker-container {
+    position: relative;
+  }
+  
+  #datepicker-container .datepicker-dropdown {
+    z-index: 9999;
+  }
+  
+  #datepicker-container .datepicker {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #datepicker-container .datepicker table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #datepicker-container .datepicker table th,
+  #datepicker-container .datepicker table td {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #datepicker-container .datepicker table th {
+    font-weight: bold;
+  }
+  
+  #datepicker-container .datepicker .datepicker-switch {
+    padding: 10px;
+  }
+  
+  #datepicker-container .datepicker .datepicker-switch:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
+  #datepicker-container .datepicker tfoot tr th {
+    padding-top: 10px;
+  }
+  
+  #datepicker-container .datepicker tfoot tr th .today {
+    font-weight: bold;
+  }
+  
+  #datepicker-container .datepicker tfoot tr th .clear {
+    cursor: pointer;
+  }
+  
+  #datepicker-container .datepicker .datepicker-days table.table-condensed thead tr:first-child th {
+    border-top: none;
+  }
+  
+  #datepicker-container .datepicker .datepicker-days table.table-condensed thead tr:nth-child(2) th {
+    border-bottom: none;
+  }
+  
+  #datepicker-container .datepicker .datepicker-days table.table-condensed tbody tr:hover td,
+  #datepicker-container .datepicker .datepicker-months table.table-condensed tbody tr:hover td,
+  #datepicker-container .datepicker .datepicker-years table.table-condensed tbody tr:hover td {
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }

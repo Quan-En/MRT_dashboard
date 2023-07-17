@@ -1,0 +1,19 @@
+<div class="container mt-4 col-4 d-flex" style="margin-top:20px; margin-left:20px">
+    {% include modal_html %}
+    <div class="input-group date input-daterange">
+        <input type="text" id="start-date" class="form-control" placeholder="From Date">
+        <div class="input-group-text">to</div>
+        <input type="text" id="end-date" class="form-control" placeholder="To Date">
+    </div>
+    <div>
+        <button id="range-btn" class="btn btn-outline btn-success" data-bs-toggle="modal" data-bs-target="{{ data_bs_target }}" onclick="getValueFromDateRange()">Query</button>
+    </div>
+    <div>
+        <form id="download_data_form" method="POST">
+            {{download_data_form.hidden_tag()}}
+            <input id="download_data" name="download_data" type="hidden" class="btn btn-outline btn-primary" value="">
+            {{download_data_form.submit(class="btn btn-outline btn-primary")}}
+        </form>
+    </div>
+
+</div>
