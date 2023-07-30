@@ -1,0 +1,33 @@
+<style>
+    .modal-content {
+        background-color: #212121
+    }
+</style>
+    
+<!-- Download Info -->
+<div class="modal fade" id="Modal-Download" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">
+        Download pre-check
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+    </div>
+    <div class="modal-body" id="ModelContent">
+        
+    </div>
+    <br><br>
+    <div class="modal-footer">
+        <form id="download_data_form" method="POST">
+            {{download_data_form.hidden_tag()}}
+            <button id="download-btn" name="download_data" type="submit" class="btn btn-outline btn-success" data-bs-dismiss="modal">Download</button>
+            <input id="hidden-tag-start-date" name="hidden-tag-start-date" type="hidden" style="display: none;">
+            <input id="hidden-tag-end-date" name="hidden-tag-end-date" type="hidden" style="display: none;">
+        </form>
+        <button type="button" id="close-btn" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+    </div>
+</div>
+</div>
