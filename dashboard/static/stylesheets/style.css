@@ -35,6 +35,7 @@ color: #ffdb00;
     padding: 0;
     text-align: center;
     justify-content: center;
+    border: 1px solid #000000; /* 使用 border 屬性設置邊框顏色 */
 }
 
 

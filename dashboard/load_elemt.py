@@ -13,7 +13,7 @@ with open("./dashboard/static/images/mrt_road_map.pickle", "rb") as file:
 
 with open("./dashboard/static/images/mrt_road_map_without_line_and_marker.pickle", "rb") as file:
     fig_without_marker = pickle.load(file)
-    fig_without_marker.update_layout(height=550)
+    fig_without_marker.update_layout(height=500)
 
 
 selectedDateDict = {
